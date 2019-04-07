@@ -57,14 +57,12 @@ class CustomCard extends StatelessWidget {
         onPressed: (){
             Navigator.push(
             context,
-              MaterialPageRoute(builder: (context) => WindowScreen(mTitle, mFilter)),
+              MaterialPageRoute(builder: (context) => WindowScreen(mId,mTitle, mFilter)),
             );
         },
-        child: Icon(
-        
+        child: Icon(        
           Icons.arrow_forward_ios,
-          color: Colors.white,
-          
+          color: Colors.white,          
         ),
       ),
     );

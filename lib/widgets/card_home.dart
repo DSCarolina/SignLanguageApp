@@ -48,26 +48,8 @@ class CustomCard extends StatelessWidget {
       ],
     ),
   );
-  final cardArrowFab = Positioned(
-      bottom: paddingSize,
-      right: paddingSize,
-      child: FloatingActionButton(
-        heroTag: "fab1_$mTitle",
-        backgroundColor: Colors.black38,
-        onPressed: (){
-            Navigator.push(
-            context,
-              MaterialPageRoute(builder: (context) => WindowScreen(mId,mTitle, mFilter)),
-            );
-        },
-        child: Icon(        
-          Icons.arrow_forward_ios,
-          color: Colors.white,          
-        ),
-      ),
-    );
-
-  return Container(
+return InkWell(
+child: Container(
          height: 120.0,
       margin: const EdgeInsets.symmetric(
          vertical: 12.0,
@@ -82,10 +64,14 @@ class CustomCard extends StatelessWidget {
                   left: mPaddingCard2,
                   child: CustomText(mTitle, mFilter, mTitleSize),
                 ),
-                cardArrowFab
+             
                ]
-  ));
-    
+  )
+  ),
+  onTap: (){
+    Navigator.push(context,MaterialPageRoute(builder: (context) =>  WindowScreen(mId,mTitle, mFilter)));
+  }
+);  
  
   }
 }

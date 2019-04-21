@@ -13,10 +13,10 @@ class HomeScreen extends StatelessWidget {
       child: ListView(
         children: <Widget>[
         
-          CustomCard(1, "Abecedario", "assets/abc.png",Icon(Icons.arrow_forward),Color(0xFFe00543) ),
-          CustomCard(2, "Números", "assets/numero.png",Icon(Icons.arrow_forward), Color(0xFFa6cb12)),
-          CustomCard(3, "Colores", "assets/color.png",Icon(Icons.arrow_forward), Color(0xFFffcd3c)),
-          CustomCard(4, "Días", "assets/dia.png",Icon(Icons.arrow_forward), Color(0xFFff9234)),
+          CustomCard(1, "Abecedario", "assets/abc1.png",Icon(Icons.arrow_forward),Color(0xFFe00543) ),
+          CustomCard(2, "Números", "assets/numero1.png",Icon(Icons.arrow_forward), Color(0xFFa6cb12)),
+          CustomCard(3, "Colores", "assets/color1.png",Icon(Icons.arrow_forward), Color(0xFFffcd3c)),
+          CustomCard(4, "Días", "assets/dia1.png",Icon(Icons.arrow_forward), Color(0xFFff9234)),
         
         ],
       ),

@@ -7,7 +7,7 @@ class WindowScreen extends StatelessWidget {
   String windowDescription = "Aprendiendo ";
   Color windowColor = Colors.pink;
   double windowTitleSize = 25.0;
-  String images="assets/mars.png";
+  String pathimage="assets/mars.png";
 
   int windowId;
  
@@ -17,20 +17,20 @@ class WindowScreen extends StatelessWidget {
   Widget build(BuildContext context) {
   if (windowId==1) {
     windowDescription=windowDescription+"el abecedario";
-    images = "assets/abc/B.jpg";
+    pathimage= "assets/abc/B.jpg";
   }else{
     if (windowId==2){
         windowDescription=windowDescription+"los números";
-        images="assets/numero/0.jpg";
+        pathimage="assets/numero/0.jpg";
     }
     else{
       if (windowId==3){
         windowDescription=windowDescription+"los colores";
-        images="assets/color/rojo.png";
+        pathimage="assets/color/rojo.png";
     }
     else{
         windowDescription=windowDescription+"los días \n de la semana";
-        images="assets/dia/lunes.png";
+        pathimage="assets/dia/lunes.png";
     }
     }
 
@@ -50,7 +50,8 @@ class WindowScreen extends StatelessWidget {
       width: 250.0,
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage(images)
+          fit: BoxFit.cover,
+            image: AssetImage(pathimage)
         )
       ),
     );

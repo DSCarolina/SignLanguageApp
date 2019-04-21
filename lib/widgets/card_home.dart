@@ -63,8 +63,7 @@ child: Container(
                   bottom: mPaddingCard,
                   left: mPaddingCard2,
                   child: CustomText(mTitle, mFilter, mTitleSize),
-                ),
-             
+                ),             
                ]
   )
   ),

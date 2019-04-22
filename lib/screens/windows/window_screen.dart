@@ -34,7 +34,13 @@ class WindowScreen extends StatelessWidget {
     );
     final carousel4  = Carousel(
       boxFit: BoxFit.cover,
-        images: [AssetImage("assets/dia/lunes.png")],
+        images: [AssetImage("assets/dia/lunes.png"),
+        AssetImage("assets/dia/martes.png"),
+        AssetImage("assets/dia/miercoles.png"),
+        AssetImage("assets/dia/jueves.png"),
+        AssetImage("assets/dia/viernes.png"),
+        AssetImage("assets/dia/sabado.png"),
+        AssetImage("assets/dia/domingo.png")],
         animationCurve: Curves.fastOutSlowIn,
         animationDuration:Duration(milliseconds: 4000),
     );

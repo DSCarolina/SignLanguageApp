@@ -41,7 +41,7 @@ class WindowScreen extends StatelessWidget {
         AssetImage("assets/abc/Y.jpg"),
         AssetImage("assets/abc/Z.jpg"),],
         animationCurve: Curves.fastOutSlowIn,
-         animationDuration:Duration(milliseconds: 4000),    
+         animationDuration:Duration(milliseconds: 6000),    
     );
     final carousel2  = Carousel(
       boxFit: BoxFit.cover,
@@ -68,7 +68,7 @@ class WindowScreen extends StatelessWidget {
         AssetImage("assets/color/rosa.png"),
         AssetImage("assets/color/verde.png")],
         animationCurve: Curves.fastOutSlowIn,
-        animationDuration:Duration(milliseconds: 4000),
+        animationDuration:Duration(milliseconds: 6000),
     );
     final carousel4  = Carousel(
       boxFit: BoxFit.cover,
@@ -80,7 +80,7 @@ class WindowScreen extends StatelessWidget {
         AssetImage("assets/dia/sabado.png"),
         AssetImage("assets/dia/domingo.png")],
         animationCurve: Curves.fastOutSlowIn,
-        animationDuration:Duration(milliseconds: 4000),
+        animationDuration:Duration(milliseconds: 6000),
     );
    
   if (windowId==1) {
@@ -97,7 +97,7 @@ class WindowScreen extends StatelessWidget {
        img=carousel3;
     }
     else{
-        windowDescription=windowDescription+"los días \n de la semana";
+        windowDescription="      "+windowDescription+"los días \n            de la semana";
       img=carousel4;
     }
     }
@@ -128,7 +128,7 @@ class WindowScreen extends StatelessWidget {
                   child: boardTitle  
                 ), 
                 Positioned(
-                  top: 90.0,
+                  top: 110.0,
                   left: 15.0,
                   child: new Container(
                     height: 330.0,

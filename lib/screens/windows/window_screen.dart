@@ -113,15 +113,13 @@ class WindowScreen extends StatelessWidget {
     );
     return Scaffold(  
       appBar: AppBar(
-        // backgroundColor: Color(0xFF333366),
         backgroundColor:Color(0xFF183661),
          title: CustomText(windowTitle, Colors.white, windowTitleSize),
       ),
       body: Container(
         decoration: new BoxDecoration(color: Color(0xFFeef2f5)),
         child: Stack(
-          children: <Widget>[
-           
+          children: <Widget>[           
                 Positioned(
                   top: 25.0,
                   left: 35.0,
@@ -136,8 +134,8 @@ class WindowScreen extends StatelessWidget {
                     child: new ClipRect(
                       child: img
                     ),
-                  ),                  
-                ),                            
+                  ),
+                ), 
           ],
         ),
       ),

@@ -61,7 +61,12 @@ class WindowScreen extends StatelessWidget {
     final carousel3  = Carousel(
       boxFit: BoxFit.cover,
         images: [AssetImage("assets/color/rojo.png"),
-        AssetImage("assets/color/amarillo.png")],
+        AssetImage("assets/color/amarillo.png"),
+        AssetImage("assets/color/azul.png"),
+        AssetImage("assets/color/blanco.png"),
+        AssetImage("assets/color/negro.png"),
+        AssetImage("assets/color/rosa.png"),
+        AssetImage("assets/color/verde.png")],
         animationCurve: Curves.fastOutSlowIn,
         animationDuration:Duration(milliseconds: 4000),
     );
